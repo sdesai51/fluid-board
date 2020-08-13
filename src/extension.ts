@@ -120,7 +120,7 @@ function createWorkItem() {
 	return new Promise(function (resolve, reject) {
 		needle.post(url, params, options, function (err, res) {
 			if (err) reject(err);
-			resolve(res.body);
+			resolve(res);
 		});
 	});
 }
